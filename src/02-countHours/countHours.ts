@@ -1,4 +1,3 @@
-//132p
 export const countHours = (year: number, holidays: string[]) => {
   if (!year) throw new Error('year must be provided')
   if (typeof year !== 'number') throw new Error('year must be a number')

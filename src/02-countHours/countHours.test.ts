@@ -25,7 +25,7 @@ describe('countHours', () => {
     expect(() => countHours(1, [1])).toThrow()
   })
 
-  it('should ', () => {
+  it('should return result', () => {
     expect(countHours(year, holidays)).toBe(result)
   })
 })
