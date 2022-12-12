@@ -10,10 +10,10 @@ describe('checkJump', () => {
   it('should return correct result', () => {
     expect(checkJump(heights)).toBe(res)
   })
-  // it('should return correct result', () => {
-  //   expect(checkJump(heights1)).toBe(res1)
-  // })
-  // it('should return correct result', () => {
-  //   expect(checkJump(heights2)).toBe(res2)
-  // })
+  it('should return correct result', () => {
+    expect(checkJump(heights1)).toBe(res1)
+  })
+  it('should return correct result', () => {
+    expect(checkJump(heights2)).toBe(res2)
+  })
 })
