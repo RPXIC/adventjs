@@ -12,13 +12,13 @@ describe('howManyReindeers', () => {
   it('should throw error if parameter reindeerTypes is an empty array', () => {
     expect(() => howManyReindeers([])).toThrow()
   })
-  it('should throw error if parameter reindeerTypes is not provided', () => {
+  it('should throw error if parameter gifts is not provided', () => {
     expect(() => howManyReindeers()).toThrow()
   })
-  it('should throw error if parameter reindeerTypes is not an array', () => {
+  it('should throw error if parameter gifts is not an array', () => {
     expect(() => howManyReindeers([{ type: 'a', weightCapacity: 1 }], 1)).toThrow()
   })
-  it('should throw error if parameter reindeerTypes is an empty array', () => {
+  it('should throw error if parameter gifts is an empty array', () => {
     expect(() => howManyReindeers([{ type: 'a', weightCapacity: 1 }], [])).toThrow()
   })
 
