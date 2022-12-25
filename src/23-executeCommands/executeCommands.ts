@@ -23,7 +23,6 @@ export const executeCommands = (commands: string[]) => {
       const [a, param2] = param1.split(',')
 
       if (a.includes('V')) {
-        console.log(a, param2)
         const pos = param2[2]
         return (result[pos] = result[a[2]])
       } else {
