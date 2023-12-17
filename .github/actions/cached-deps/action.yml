@@ -1,6 +1,6 @@
 # .github/actions/cached-deps/action.yml
 name: 'Get & Cache Dependencies'
-description: 'Get & Cache Dependencies(via npm) for faster builds'
+description: 'Get & Cache Dependencies(via yarn) for faster builds'
 runs:
   using: 'composite'
   steps:
@@ -12,8 +12,8 @@ runs:
         key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install Dependencies
-      # only run npm i if cache not found
+      # only run yarn i if cache not found
       if: steps.cache-node-modules.outputs.cache-hit != 'true'
-      run: npm ci
+      run: yarn
       # the shell to be used is required in composite custom actions
       shell: bash
