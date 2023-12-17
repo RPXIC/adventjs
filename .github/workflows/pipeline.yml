@@ -36,11 +36,11 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          cache: 'npm'
+          cache: 'yarn'
           node-version: '18'
 
       - name: Load & Cache Dependencies
         uses: ./.github/actions/cached-deps
 
       - name: Run tests
-        run: npm run test
+        run: yarn test
