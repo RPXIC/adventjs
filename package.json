@@ -12,8 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "standard": "^17.0.0",
-    "vitest": "^0.25.3"
+    "@vitest/coverage-v8": "^1.0.4",
+    "standard": "^17.1.0",
+    "vitest": "^1.0.4"
   },
   "eslintConfig": {
     "extends": "./node-modules/standard/eslintrc.json"
